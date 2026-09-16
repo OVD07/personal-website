@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Base Royal Blue Gradients -->
+    <linearGradient id="mBaseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b52e0" />
+      <stop offset="50%" stop-color="#3246d1" />
+      <stop offset="100%" stop-color="#2838bd" />
+    </linearGradient>
+
+    <!-- Facet Gradients for 3D Chiseled Effect -->
+    <linearGradient id="mTopLeftFacet" x1="20%" y1="10%" x2="70%" y2="80%">
+      <stop offset="0%" stop-color="#4059e8" />
+      <stop offset="60%" stop-color="#2e42c9" />
+      <stop offset="100%" stop-color="#2232a8" />
+    </linearGradient>
+
+    <linearGradient id="mTopRightFacet" x1="80%" y1="10%" x2="30%" y2="80%">
+      <stop offset="0%" stop-color="#4d65ee" />
+      <stop offset="50%" stop-color="#3347d4" />
+      <stop offset="100%" stop-color="#2535b0" />
+    </linearGradient>
+
+    <linearGradient id="mCenterFoldLeft" x1="25%" y1="40%" x2="50%" y2="65%">
+      <stop offset="0%" stop-color="#293bc0" />
+      <stop offset="100%" stop-color="#1f2d9c" />
+    </linearGradient>
+
+    <linearGradient id="mCenterFoldRight" x1="75%" y1="40%" x2="50%" y2="65%">
+      <stop offset="0%" stop-color="#3448d6" />
+      <stop offset="100%" stop-color="#2636ad" />
+    </linearGradient>
+
+    <linearGradient id="mLeftLeg" x1="10%" y1="30%" x2="40%" y2="90%">
+      <stop offset="0%" stop-color="#3247d4" />
+      <stop offset="50%" stop-color="#2838b8" />
+      <stop offset="100%" stop-color="#1d288c" />
+    </linearGradient>
+
+    <linearGradient id="mRightLeg" x1="90%" y1="30%" x2="60%" y2="90%">
+      <stop offset="0%" stop-color="#445ce8" />
+      <stop offset="50%" stop-color="#3043cc" />
+      <stop offset="100%" stop-color="#22309e" />
+    </linearGradient>
+
+    <!-- Luminous Cyan Crease Highlight -->
+    <linearGradient id="mCreaseGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0" />
+      <stop offset="40%" stop-color="#67e8f9" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#a5f3fc" stop-opacity="1" />
+      <stop offset="60%" stop-color="#67e8f9" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#67e8f9" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="subtleDrop" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1e293b" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Blue Silhouette -->
+  <path
+    d="M 120,20
+       C 55,20 0,75 0,140
+       L 0,860
+       C 0,935 65,995 140,995
+       C 175,995 210,980 235,950
+       L 490,660
+       C 496,653 504,653 510,660
+       L 765,950
+       C 790,980 825,995 860,995
+       C 935,995 1000,935 1000,860
+       L 1000,140
+       C 1000,75 945,20 880,20
+       C 845,20 810,35 785,60
+       L 510,335
+       C 504,342 496,342 490,335
+       L 215,60
+       C 190,35 155,20 120,20 Z"
+    fill="url(#mBaseGrad)"
+    filter="url(#subtleDrop)"
+  />
+
+  <!-- Crisp Inner White Contour Line -->
+  <path
+    d="M 115,55
+       L 115,920
+       C 115,945 135,960 155,940
+       L 368,525
+       C 372,517 380,512 390,512
+       L 500,588
+       L 610,512
+       C 620,512 628,517 632,525
+       L 845,940
+       C 865,960 885,945 885,920
+       L 885,55
+       C 885,45 875,38 865,48
+       L 508,285
+       C 503,288 497,288 492,285
+       L 135,48
+       C 125,38 115,45 115,55 Z"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="24"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- 3D Geometric Faceted Elements inside the M -->
+  <!-- Left Wing Upper Facet -->
+  <polygon
+    points="130,80 500,288 500,588 190,415"
+    fill="url(#mTopLeftFacet)"
+  />
+
+  <!-- Right Wing Upper Facet -->
+  <polygon
+    points="870,80 500,288 500,588 810,415"
+    fill="url(#mTopRightFacet)"
+  />
+
+  <!-- Central Fold Downward Triangle (Left Half) -->
+  <polygon
+    points="190,415 500,288 500,588"
+    fill="url(#mCenterFoldLeft)"
+  />
+
+  <!-- Central Fold Downward Triangle (Right Half) -->
+  <polygon
+    points="810,415 500,288 500,588"
+    fill="url(#mCenterFoldRight)"
+  />
+
+  <!-- Left Lower Pillar / Leg Facet -->
+  <polygon
+    points="130,80 190,415 500,588 375,520 125,930 120,80"
+    fill="url(#mLeftLeg)"
+  />
+
+  <!-- Right Lower Pillar / Leg Facet -->
+  <polygon
+    points="870,80 810,415 500,588 625,520 875,930 880,80"
+    fill="url(#mRightLeg)"
+  />
+
+  <!-- Subtle Cyan/Teal Crease Edge Flare matching the original image -->
+  <path
+    d="M 190,415 Q 345,505 500,588 Q 655,505 810,415"
+    fill="none"
+    stroke="url(#mCreaseGlow)"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+</svg>
